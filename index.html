@@ -27,13 +27,13 @@
 					  <a href="#" class="image avatar">
 						  <img src="images/me.jpg" alt="" style="width: 130px; height: auto; display: block; margin: 0 auto;" />
 					  </a>
-					  <h1 style="font-size: 2em; COLOR: rgba(245, 243, 245, 0.861);"><strong><em>Hi! I am Vidushi Bhargava, <br></strong><span id="role">a Data Enthusiast.</span></em><br></h1>
+					  <h1 style="font-size: 2em; COLOR: rgba(245, 243, 245, 0.861);"><strong><em>Hi! I am Vidushi Bhargava, <br></strong><span id="role">a Data Scientist.</span></em><br></h1>
 				  </div>
 			  </header>
 		  
 			  <script>
 				  // List of roles
-				  var roles = ["Data Scientist.", "Data Analyst.", "Machine Learning Engineer.", "Data Engineer.", "Business Analyst."];
+				  var roles = [" a Data Scientist."];
 				  
 				  // Index to track current role
 				  var index = 0;
@@ -65,166 +65,253 @@
 							<li><a href="https://drive.google.com/file/d/1aTqWOIIzYH2vmXTSNngIryaScUrx9YCh/view?usp=sharing" class="button" target="_blank">My Resume</a></li>
 						  </ul>	 	
 						</section>				
-						<section id="two">
+						<section id="two"style="background-color: #f12f12f12; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
 						<h2 style="font-size: 1.5em; font-weight: bold; color: rgba(62, 3, 49, 0.861);" >Recent Work</h2>
 						<div class="row">
-							<article class="col-4 col-12-xsmall work-item">
-								<a href="https://github.com/Vidushibh/Cervical-Cancer-Prediction-Using-XG-boost-algorithm/tree/master" target="_blank" class="image fit thumb">
-									<img src="images/cc.png" alt="" width="2000" height = "150" />
-								</a>
-								<h3 style="font-size: 1em; COLOR: rgba(105, 40, 91, 0.861);">Cervical Cancer Prediction Using XgBoost</h3>
-								<p>Machine Learning, EDA, Data Visualization</p>
-							</article>
-	
-							<article class="col-4 col-12-xsmall work-item">
-								<a href="https://github.com/Vidushibh/SmileSent---Analyzing-sentiments-with-Twitter-s-SMILE-dataset/blob/main/Smilesent.ipynb" target="_blank" class="image fit thumb">
-									<img src="images/smilesent.png" alt="" width = "250" height = "150" />
-								</a>
-								<h3 style="font-size: 1em; COLOR: rgba(105, 40, 91, 0.861);">SmileSent-Analyzing sentiments with SMILE Twitter dataset</h3>
-								<p>Deep Learning using BERT, EDA, Data Visualization, Torch</p>
-							</article>
+							
+							<!-- Add jQuery -->
+							<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Add fancybox CSS -->
+							<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+<!-- Add fancybox JS -->
+							<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+							<style>
+								/* CSS for smaller image size */
+								.fancybox-slide img {
+									max-width: 60%;
+									max-height: 60%;
+									margin: auto;
+								}
+								</style>
+
+								<article class="col-4 col-12-xsmall work-item">
+									<a href="images/cc.png" data-fancybox="gallery">
+										<div class="image fit thumb">
+											<img src="images/cc.png" alt="" width="2000" height="150" />
+										</div>
+									</a>
+									<h3 style="font-size: 1em; COLOR: rgba(105, 40, 91, 0.861);">Cervical Cancer Prediction Using XgBoost</h3>
+									<p>Tech Stack: Machine Learning, EDA, Data Visualization</p>
+									<ul class="actions"></ul>
+									<a href="https://github.com/Vidushibh/Cervical-Cancer-Prediction-Using-XG-boost-algorithm/tree/master" target="_blank" class="button">View Project</a>
+								</article>
+
+								<article class="col-4 col-12-xsmall work-item">
+									<a href="images/smilesent.png" data-fancybox="gallery">
+										<div class="image fit thumb">
+											<img src="images/smilesent.png" alt="" width="2000" height="150" />
+										</div>
+									</a>
+									<h3 style="font-size: 1em; COLOR: rgba(105, 40, 91, 0.861);">SmileSent-Analyzing sentiments with SMILE Twitter dataset</h3>
+									<p>Tech Stack: Deep Learning using BERT, EDA, Data Visualization, Torch</p>
+									<a href="https://github.com/Vidushibh/SmileSent---Analyzing-sentiments-with-Twitter-s-SMILE-dataset/blob/main/Smilesent.ipynb" target="_blank" class="button">View Project</a>
+								</article>
+
+								<article class="col-4 col-12-xsmall work-item">
+									<a href="images/dashboard.png" data-fancybox="gallery">
+										<div class="image fit thumb">
+											<img src="images/dashboard.png" alt="" width="2000" height="150" />
+										</div>
+									</a>
+									<h3 style="font-size: 1em; COLOR: rgba(105, 40, 91, 0.861);">Dasboard created on US Airlines Dataset</h3>
+									<p>Tech Stack: Streamlit, Pandas, NumPy, Plotly Express, Matplotlib, WordCloud, Plotly, Matplotlib</p>
+									<a href="https://github.com/Vidushibh/Dashboard-created-on-US-Airlines-dataset" target="_blank" class="button">View Project</a>
+								</article>
+
+
+							
+								<article class="col-4 col-12-xsmall work-item">
+									<a href="images/breast cancer.jpeg" data-fancybox="gallery">
+										<div class="image fit thumb">
+											<img src="images/breast cancer.jpeg" alt="" width="2000" height="150" />
+										</div>
+									</a>
+									<h3 style="font-size: 1em; COLOR: rgba(105, 40, 91, 0.861);">Breast Cancer Prediction Using Logistic Regression</h3>
+									<p>Tech Stack: Machine Learning, EDA, Data Visualization</p>
+									<a href="https://colab.research.google.com/drive/1cQltacOfq2ZsKHI8RO_9whFDpIZRLlQ8#scrollTo=mhargzFLzYx5" target="_blank" class="button">View Project</a>
+								</article>
+
+
+								<article class="col-4 col-12-xsmall work-item">
+									<a href="images/image seg.png" data-fancybox="gallery">
+										<div class="image fit thumb">
+											<img src="images/image seg.png" alt="" width="2000" height="150" />
+										</div>
+									</a>
+									<h3 style="font-size: 1em; COLOR: rgba(105, 40, 91, 0.861);">Image Segmentation using OpenCV and K-Means</h3>
+									<p>Tech Stack: OpenCV, Matplotlib, Data Visualization</p>
+									<a href="https://github.com/Vidushibh/Image-Segmentation-using-Opencv-and-KMeans" target="_blank" class="button">View Project</a>
+								</article>	
+
 
 							<article class="col-4 col-12-xsmall work-item">
-								<a href="https://github.com/Vidushibh/Dashboard-created-on-US-Airlines-dataset" target="_blank" class="image fit thumb">
-									<img src="images/dashboard.png" alt="" width = "250" height = "150"/>
-								</a>
-								<h3 style="font-size: 1em; COLOR: rgba(105, 40, 91, 0.861);">Dasboard created on US Airlines Dataset</h3>
-								<p>Streamlit, Pandas, NumPy, Plotly Express, Matplotlib, WordCloud, Plotly, Matplotlib</p>
-							</article>
-	
-							<article class="col-4 col-12-xsmall work-item">
-								<a href="https://colab.research.google.com/drive/1cQltacOfq2ZsKHI8RO_9whFDpIZRLlQ8#scrollTo=mhargzFLzYx5" target="_blank" class="image fit thumb">
-									<img src="images/breast cancer.jpeg" alt="" width = "260" height = "150" />
-								</a>
-								<h3 style="font-size: 1em; COLOR: rgba(105, 40, 91, 0.861);">Breast Cancer Prediction Using Logistic Regression</h3>
-								<p>Machine Learning, EDA, Data Visualization</p>
-							</article>
-
-							<article class="col-4 col-12-xsmall work-item">
-								<a href="https://github.com/Vidushibh/Image-Segmentation-using-Opencv-and-KMeans" target="_blank" class="image fit thumb">
-									<img src="images/image seg.png" alt="" width="2000" height = "150" />
-								</a>
-								<h3 style="font-size: 1em; COLOR: rgba(105, 40, 91, 0.861);">Image Segmentation using OpenCV and K-Means</h3>
-								<p>OpenCV, Matplotlib, Data Visualization</p>
-							</article>
-
-							<article class="col-4 col-12-xsmall work-item">
-								<a href="https://github.com/Vidushibh/Bank-Customer-Marketing-Segmentation" target="_blank" class="image fit thumb">
-									<img src="images/Bank segmentation.png" alt="" width="2000" height = "150" />
+								<a href="images/Bank segmentation.png" data-fancybox="gallery">
+									<div class="image fit thumb">
+										<img src="images/Bank segmentation.png" alt="" width="2000" height="150" />
+									</div>
 								</a>
 								<h3 style="font-size: 1em; COLOR: rgba(105, 40, 91, 0.861);">Bank Customer Marketing Segmentation</h3>
 								<p>Data Exploration, Scaling, Data Visualization, KMeans , PCA</p>
+								<a href="https://github.com/Vidushibh/Bank-Customer-Marketing-Segmentation" target="_blank" class="button">View Project</a>
 							</article>
+							
+							
+							
 
 						</section>
-					<section id="three">
-					<h2 style="font-size: 1.5em; font-weight: bold; color: rgba(62, 3, 49, 0.861);" >Work Experience</h2>
-					<div class="row">
-					  <article class="col-12 work-item">
-						<div class="logo-container">
-						  <img src="images/bank logo.jpeg" alt="Bank Logo" width="100" />
+				
+					  <section id="three" style="background-color: #f12f12f12; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+						<h2 style="font-size: 2em; font-weight: bold; color: #003366;">Work Experience</h2>
+						<div class="row">
+							<article class="col-12 work-item">
+								<div class="logo-container">
+									<img src="images/bank logo.jpeg" alt="Bank Logo" width="100" />
+								</div>
+								<h3 style="font-size: 1.5em; font-weight: bold; color: #003366;">Data Management Intern</h3>
+								<p style="color: #003366;"><b><span style="font-weight: bold;">Federal Home Loan Bank of Indianapolis, IN, USA | June 2023 - Dec 2023</span></b></p>
+								<p style="color: #003366;"> 
+									• Created and/or modified data reports, reducing data retrieval time by 20%.<br>
+									• Deployed efficient batch processes to extract, transform, and load (ETL) data from source table into target tables, including Change Data Capture (CDC) logic.<br>
+									• Transformed 25 EUCs into production reports, improving data accuracy by 15% and saving 35 weekly manual hours.<br>
+									• Ran SQL queries in SSMS to extract data related to our clients, enabling comprehensive analysis and preferences.<br>
+									• Created views for Power BI data story, providing visually engaging representations of data insights for effective communication and decision-making.<br>
+									• Designed and presented a Power BI data story, increasing data-driven decision-making by 10%.
+								</p>
+								<p style="color: #003366;"><b>Relevant Tools and Skills:</b> ETL, Brightics, Oracle, Power BI, SSMS, RICH Client, Rally</p>
+							</article> 
+							<!-- Repeat the above structure for other work experiences -->
+							<article class="col-12 work-item">
+								<div class="logo-container">
+									<img src="images/genpact logo.png" alt="Bank Logo" width="100" />
+								</div>
+								<h3 style="font-size: 1.5em; font-weight: bold; color: #003366;">Business Analyst</h3>
+								<p style="color: #003366;"><b><span style="font-weight: bold;">Genpact, India | Jan 2022 - Aug 2022</span></b></p>
+								<p style="color: #003366;"> 
+									• Performed in-depth model reviews, achieving a 15% increase in model accuracy and performance.<br>
+									• Contributed to ongoing validation activities, optimizing workflow processes across the model lifecycle, and improving model efficiency.
+							<br>• Managed a highly imbalanced dataset for credit card fraud detection. Random Forest identified 73 errors with 99.74% accuracy, Local Outlier Factor detected 97 errors with 99.65% accuracy, while Support Vector Machines found 8516 errors with 70.09% accuracy, and Logistic Regression was the least accurate.
+								</p>
+								<p style="color: #003366;"><b>Relevant Tools and Skills:</b> SQL, Python, Machine Learning, Tableau</p>
+							</article>
+							<article class="col-12 work-item">
+								<div class="logo-container">
+									<img src="images/CC logo.png" alt="Bank Logo" width="100" />
+								</div>
+								<h3 style="font-size: 1.5em; font-weight: bold; color: #003366;">Senior Analyst</h3>
+								<p style="color: #003366;"><b><span style="font-weight: bold;">Cartesian Consulting, India | July 2021 - Jan 2022</span></b></p>
+								<p style="color: #003366;"> 
+									• Implemented a classification model to identify customer propensity for high-end product purchases, reducing churn rate by 3%.<br>
+									• Mentored 3 team members in preparing a single customer view, performing bivariate analysis, building a machine learning model to predict customer buying propensity, and proposing a business case to the client.
+									• Developed win-back, retention, and renewal campaigns, extending lifecycles and increasing customer response by 40%.
+								</p>
+								<p style="color: #003366;"><b>Relevant Tools and Skills:</b> SQL, Python, Excel, Powerpoint, Machine Learning</p>
+							</article>
+							<article class="col-12 work-item">
+								<div class="logo-container">
+									<img src="images/chegg logo.png" alt="Bank Logo" width="100" />
+								</div>
+								<h3 style="font-size: 1.5em; font-weight: bold; color: #003366;">Senior Subject Matter Expert</h3>
+								<p style="color: #003366;"><b><span style="font-weight: bold;">Chegg India Pvt Ltd, India | Jan 2019 - July 2021</span></b></p>
+								<p style="color: #003366;"> 
+									• Developed a highly accurate Q&A classifier, categorizing posted questions into precise categories, improving question routing efficiency by 25%.<br>
+									• Engineered a robust R-based random forest model to proactively identify and filter out freelancer-posted spam solutions, resulting in a 30% reduction in spam content and enhancing platform credibility.
+								</p>
+								<p style="color: #003366;"><b>Relevant Tools and Skills:</b> R, SQL, Python, Excel, Machine Learning, Latex, MathType</p>
+							</article>
 						</div>
-						<h3 style="font-size: 1.1em; COLOR: rgba(105, 40, 91, 0.861);">Data Management intern</h3>
-						<p><b>Federal Home Loan Bank of Indianapolis, IN, USA | June 2023 - Dec 2023</b></p>
-						<p> •	Initiated, oversaw, and standardized data reports, reducing data retrieval time by 20%.
-							<br>•	Deployed efficient batch processes to extract, transform , and load (ETL) data from source table into target tables,
-							including Change Data Capture (CDC) logic.
-							<br>•	Transformed 25 EUCs into production reports, improving data accuracy by 15% and saving 35 weekly manual hours.
-						<br>	•	Designed and presented a Power BI data story, increasing data-driven decision-making by 10%.
-							</p>
-						
-						<br><p><b>Relevant Tools and Skills : </b> ETL, Brightics, Oracle, Power BI, SSMS, RICH Client, Rally</p>
-						<div class="logo-container">
-						  <!-- Your second educational event logo here -->
-						  <img src="images/genpact logo.png" alt=" Logo" width="100" />
-						</div>
-						<h3 style="font-size: 1.1em; COLOR: rgba(105, 40, 91, 0.861);">Business Analyst</h3>
-						<p><b>Genpact, India | Jan 2022 - Aug 2022 </b></p>
-						<p> • Performed in-depth model reviews, achieving a 15% increase in model accuracy and performance.
-							<br>•	Contributed to ongoing validation activities, optimizing workflow processes across the model lifecycle, and improving model efficiency.
-							<br>•	Managed a highly imbalanced dataset for credit card fraud detection. Random Forest identified 73 errors with 99.74% accuracy, Local Outlier Factor detected 97 errors with 99.65% accuracy, while Support Vector Machines found 8516 errors with 70.09% accuracy, and Logistic Regression was the least accurate.
-							</p>
-						<br><p><b>Relevant Tools and Skills : </b> SQL, Python, Machine Learning, Tableau</p>
-					  </article> 
-					  <article class="col-12 work-item">
-						<div class="logo-container">
-						  <!-- Your third educational event logo here -->
-						  <img src="images/CC logo.png" alt="Logo" width="80" />
-						</div>
-						<h3 style="font-size: 1.1em; COLOR: rgba(105, 40, 91, 0.861);">Senior Analyst | July 2021 - Jan 2022</h3>
-						<p><b>Cartesian Consulting, India </b></p>
-						<p>     •	Implemented a classification model to identify customer propensity for high-end product purchases, reducing churn rate by 3%.
-							<br>•	Developed win-back, retention, and renewal campaigns, extending lifecycles and increasing customer response by 40%.
-							<br>•	Mentored 3 team members in preparing a single customer view, performing bivariate analysis, building a machine learning model to predict customer buying propensity, and proposing a business case to the client.
-							</p>
-						<br><p><b>Relevant Tools and Skills : </b>SQL, Python, Excel, Powerpoint, Machine Learning</p>
-					  </article>
-					  <article class="col-12 work-item">
-						<div class="logo-container">
-						  <!-- Your third educational event logo here -->
-						  <img src="images/chegg logo.png" alt="Logo" width="80" />
-						</div>
-						<h3 style="font-size: 1.1em; COLOR: rgba(105, 40, 91, 0.861);">Senior Subject Matter Expert</h3>
-						<p><b>Chegg India Pvt Ltd, India | Jan 2019 - July 2021 </b></p>
-						<p> •	Developed a highly accurate Q&A classifier, categorizing posted questions into precise categories, improving question routing efficiency by 25%.
-						<BR>	•	Engineered a robust R-based random forest model to proactively identify and filter out freelancer-posted spam solutions, resulting in a 30% reduction in spam content and enhancing platform credibility. </p>
-							
-							</p>
-						<br><p><b>Relevant Tools and Skills : </b>R, SQL, Python, Excel, Machine Learning, Latex, MathType</p>
-					  </article>	
-				    </section>  
-					<section id="education">
-					<header class="major">
-						<h2 style="font-size: 1.5em; font-weight: bold; color: rgba(62, 3, 49, 0.861);">Education</h2>
-					</header>
-					<div class="row">
-						<article class="col-12 work-item">
-							<div class="logo-container">
-							  <img src="images/iu.png" alt="Indiana University Logo" width="50" />
-							</div>
-							<h3 style="font-size: 1.1em; COLOR: rgba(105, 40, 91, 0.861);">Master of Science in Data Science</h3>
-							<p><b>Indiana University-Bloomington, IN, USA | August 2022 - May 2024</b></p>
-							<p>Along with my masters I also work as a Graduate student where I observe student study sessions, offer constructive feedback to 11 PASS leaders, enhancing classroom instruction quality by 15% and overall student engagement.</p>
-							<p>Additionally, I perform data analysis to predict the effectiveness of the student study sessions, resulting in a 20% success rate increase. </p>
-							<br><p><b>Relevant Coursework : </b>Elements of Artificial Intelligence, Applied Machine Learning, Applied Statistics, Data Mining, Social Media Mining, Advanced Database Technologies, Database Management Systems, Scientific Visualization</p>
-						  </article>
-						  <article class="col-12 work-item">
-							<div class="logo-container">
-							  <!-- Your second educational event logo here -->
-							  <img src="images/du.jpeg" alt="Delhi University Logo" width="50" />
-							</div>
-							<h3 style="font-size: 1.1em; COLOR: rgba(105, 40, 91, 0.861);">Master of Science in Mathematics</h3>
-							<p><b>University of Delhi, India | July 2014 - May 2016</b></p>
-							<p>Actively contributed to the university's Placement Cell, participating in organizing events and assisting fellow students in their career development.</p>
-							<p>As a university student, I actively participated in Delhi University Computer center (DUCC), contributing to coding and programming activities. </p>
-							<br><p><b>Relevant Coursework : </b>Differential Geometry, Advanced Complex Analysis, Methods of Applied Mathematics, Group Theory, Harmonic Analysis, Computational methods for PDE</p>
-						  </article>
-						  <article class="col-12 work-item">
-							<div class="logo-container">
-							  <!-- Your third educational event logo here -->
-							  <img src="images/du.jpeg" alt="Delhi University Logo" width="50" />
-							</div>
-							<h3 style="font-size: 1.1em; COLOR: rgba(105, 40, 91, 0.861);">Bachelor of Science in Mathematics Honours</h3>
-							<p><b>University of Delhi, India | July 2011 - May 2014</b></p>
-							<p>I was among the Top 3 students of the university.</p>
-							<br><p><b>Relevant Coursework : </b>Linear Algebra, Real Analysis, Calculus, Differential Equations, Statistics, Probability</p>
-						  </article>
-					</div>
 					</section>
+					
+					</section>
+					<section id="education" style="background-color: #f12f12f12; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+						<h2 style="font-size: 2em; font-weight: bold; color: #003366;">Education</h2>
+						<div class="row">
+							<article class="col-12 work-item">
+								<div class="logo-container">
+									<img src="images/iu.png" alt="Indiana University Logo" width="50" />
+								</div>
+								<h3 style="font-size: 1.5em; font-weight: bold; color: #003366;">Master of Science in Data Science</h3>
+								<p style="color: #003366;"><b><span style="font-weight: bold;">Indiana University-Bloomington, IN, USA | August 2022 - May 2024</span></b></p>
+								<p style="color: #003366;"> 
+									• Along with my masters I also work as a Graduate student where I observe student study sessions, offer constructive feedback to 11 PASS leaders, enhancing classroom instruction quality by 15% and overall student engagement.<br>
+									• Performed data analysis to predict the effectiveness of the student study sessions, resulting in a 20% success rate increase.<br>
+								</p><br>
+								<p style="color: #003366;"><b>Relevant Coursework :</b> Elements of Artificial Intelligence, Applied Machine Learning, Applied Statistics, Data Mining, Social Media Mining, Advanced Database Technologies, Database Management Systems, Scientific Visualization</p>
+							</article> 
+
+							<article class="col-12 work-item">
+								<div class="logo-container">
+									<img src="images/du.jpeg" alt="Delhi University Logo" width="50" />
+								</div>
+								<h3 style="font-size: 1.5em; font-weight: bold; color: #003366;">Master of Science in Mathematics</h3>
+								<p style="color: #003366;"><b><span style="font-weight: bold;">University of Delhi, India | July 2011 - May 2014</span></b></p>
+								<p style="color: #003366;"> 
+									• Actively contributed to the university's Placement Cell, participating in organizing events and assisting fellow students in their career development.<br>
+									• As a university student, I actively participated in Delhi University Computer center (DUCC), contributing to coding and programming activities.<br>
+								</p><br>
+								<p style="color: #003366;"><b>Relevant Coursework :</b> Differential Geometry, Advanced Complex Analysis, Methods of Applied Mathematics, Group Theory, Harmonic Analysis, Computational methods for PDE</p>
+							</article>
+
+							<article class="col-12 work-item">
+								<div class="logo-container">
+									<img src="images/du.jpeg" alt="Delhi University Logo" width="50" />
+								</div>
+								<h3 style="font-size: 1.5em; font-weight: bold; color: #003366;">Bachelor of Science in Mathematics Honours</h3>
+								<p style="color: #003366;"><b><span style="font-weight: bold;">University of Delhi, India | July 2011 - May 2014</span></b></p>
+								<p style="color: #003366;"> 
+									• I was among the Top 3 students of the university.
+								</p><br>
+								<p style="color: #003366;"><b>Relevant Coursework :</b> Linear Algebra, Real Analysis, Calculus, Differential Equations, Statistics, Probability</p>
+							</article>
+
+						</section> 
 				<!-- Four -->
-					<section id="five">
-					<h2 style="font-size: 1.5em; font-weight: bold; color: rgba(62, 3, 49, 0.861);">Certifications</h2>
+					<section id="five" style="background-color: #f12f12f12; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+						
+					
+						<h2 style="font-size: 2em; font-weight: bold; color: #003366;">Certifications</h2>
 					<div class="row">
 						<article class="col-4 col-12-xsmall work-item">
-							<a href="images/1.png" class="image fit thumb"><img src="images/1.png" alt="" /></a>
+							<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Add fancybox CSS -->
+							<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+<!-- Add fancybox JS -->
+							<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+							<style>
+								/* CSS for smaller image size */
+								.fancybox-slide img {
+									max-width: 60%;
+									max-height: 60%;
+									margin: auto;
+								}
+								</style>
+							
+							<a href="images/1.png" data-fancybox="gallery">
+								<div class="image fit thumb">
+									<img src="images/1.png" alt="" width="2000" height="150" />
+								</div>
+							</a>
 							
 						</article>
 						<article class="col-4 col-12-xsmall work-item">
-							<a href="images/2.png" class="image fit thumb"><img src="images/2.png" alt="" /></a>
+				
+							<a href="images/2.png" data-fancybox="gallery">
+								<div class="image fit thumb">
+									<img src="images/2.png" alt="" width="2000" height="150" />
+								</div>
+							</a>
 							
 						</article>
 						<article class="col-4 col-12-xsmall work-item">
-							<a href="images/3.png" class="image fit thumb"><img src="images/3.png" alt="" /></a>			
+						
+							<a href="images/3.png" data-fancybox="gallery">
+								<div class="image fit thumb">
+									<img src="images/3.png" alt="" width="2000" height="150" />
+								</div>
+							</a>		
 					</section>
 <!-- Three -->
 					<section id="three">
