@@ -1,367 +1,585 @@
-<!DOCTYPE HTML>
-
-<html>	
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Vidushi Bhargava Portfolio</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <!-- Link to your custom CSS file -->
-    <link rel="stylesheet" href="assets/css/custom.css" />
-    <!-- Link to the main CSS file -->
-    <link rel="stylesheet" href="assets/css/main.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume with Tabs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+        }
+        .container {
+            display: flex;
+            width: 100%;
+        }
+        .left {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            background: url('images/bg.jpg') no-repeat center center;
+            background-size: cover;
+            text-align: center;
+            color: #ffffff;
+        }
+        .right {
+            width: 70%;
+            padding: 20px;
+            overflow-y: auto;
+            margin-top: 5px; 
+            margin-left: 30px;
+            margin-right: 30px;
+            padding-top: 10px;
+        }
+        .tabs {
+            display: flex;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+        .tab {
+            padding: 10px 20px;
+            border: 1px solid #ccc;
+            border-bottom: none;
+            background-color: #f1f1f1;
+        }
+        .tab:hover {
+            background-color: #ddd;
+        }
+        .tab.active {
+            background-color: #fff;
+            border-bottom: 1px solid #fff;
+        }
+        .tab-content {
+            border: 1px solid #ccc;
+            padding: 20px;
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        .timeline {
+            list-style: none;
+            padding: 0;
+        }
+        .event {
+            margin-bottom: 20px;
+        }
+        .content {
+            display: none;
+            padding-left: 20px;
+        }
+        input[type="checkbox"] {
+            display: none;
+        }
+        input[type="checkbox"] + label {
+            cursor: pointer;
+        }
+        input[type="checkbox"]:checked + label + .content {
+            display: block;
+        }
+        .arrow {
+            color: #003366;
+            font-size: 16px;
+            padding: 5px 10px;
+            background-color: #fff;
+            border: 1px solid #003366;
+            border-radius: 5px;
+        }
+        .actions .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #003366;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+        .skills-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+        .skill-category {
+            flex: 1 1 45%;
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+        }
+        .skill-category:hover {
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        .skill-category h3 {
+            margin-top: 0;
+        }
+        .skill-list {
+            list-style: none;
+            padding: 0;
+        }
+        .skill-list li {
+            margin: 10px 0;
+        }
+        .skill-icon {
+            width: 24px;
+            height: 24px;
+            vertical-align: middle;
+            margin-right: 10px;
+        
+        }
+        .actions .button:hover {
+            background-color: #002244;
+
+            .actions .button:hover {
+                background-color: #002244;
+            }
+            #footer {
+                padding: 20px;
+                text-align: center;
+                background: #003366;
+                color: #fff;
+            }
+            #footer .icons a {
+                color: #fff;
+                margin: 0 10px;
+                text-decoration: none;
+                font-size: 1.5em;
+            }
+            #footer .icons a:hover {
+                color: #ddd;
+            }
+        }
+    </style>
 </head>
+<body>
 
+<div class="container">
+    <div class="left" style="text-align: center;">
+        <img src="images/vb.png" alt="Vidushi Bhargava" style="width: 35%; height: auto; border-radius: 50%;">
+        <h1 style="font-size: 1.3em; COLOR: rgba(245, 243, 245, 0.861);"><em>Hi! I am Vidushi Bhargava, <br></strong><span id="role">a Data Scientist.</span></em></h1>
+        
+        
+    </div>
+    <div class="right">
+        <ul class="actions" style="display: flex; justify-content: flex-end;">
+            <li><a href="https://www.linkedin.com/in/bhargavavidushi/" class="button" target="_blank">LinkedIn</a></li>
+            <li><a href="https://drive.google.com/file/d/1xygwYxbk_tUzscQcRzMzc_-XxYfIylby/view?usp=drive_link" class="button" target="_blank">My Resume</a></li>
+          </ul>	
+        <section id="one">
+            <header class="major">
+                <h2 style="font-size: 1.5em; font-weight: bold; color: rgba(41, 12, 66, 0.861);">Data Scientist with a Mathematics background and around 5 years of professional experience.</h2>
+            </header>
+            <h5 style="font-size: 1em; color: rgba(33, 41, 93, 0.861);">Having "Student of Data Science" mentality - Constantly learning and looking to expand my knowledge about the ever-evolving world of data science and its applications across various industries and domains. Capable of translating business and analytics needs into data requirements, ensuring acquisition of the necessary information to solve problems. Able to communicate business findings to technical as well as non-technical stakeholders effectively.</h5>
+        </section>
+       
+        <h1 style="font-size: 0.8em; color: rgba(105, 40, 91, 0.861);">
+            Read my latest article on the backbone of Large Language Models - Encoders and Decoders 
+            <a href="https://medium.com/@vidushibhrgv/how-encoders-and-decoders-power-large-language-models-05e866e8794c" class="button" target="_blank" style="text-decoration: none; color: rgba(105, 40, 91, 0.861);"> <u>here</u> </a>
+        </h1>
+        
+        <div class="tabs">
+            <div class="tab active" onclick="openTab(event, 'projects')">
+                <h2 style="font-size: 1em; font-weight: bold; color: #003366;">Projects</h2>
+            </div>
+            <div class="tab" onclick="openTab(event, 'skills')">
+                <h2 style="font-size: 1em; font-weight: bold; color: #003366;">Skills</h2>
+            </div>
+            <div class="tab" onclick="openTab(event, 'work')">
+                <h2 style="font-size: 1em; font-weight: bold; color: #003366;">Work Experience</h2>
+            </div>
+            <div class="tab" onclick="openTab(event, 'education')">
+                <h2 style="font-size: 1em; font-weight: bold; color: #003366;">Education</h2>
+            </div>
+            <div class="tab" onclick="openTab(event, 'certifications')">
+                <h2 style="font-size: 1em; font-weight: bold; color: #003366;">Certifications</h2>
+            </div>
+            <div class="tab" onclick="openTab(event, 'Contact me')">
+                <h2 style="font-size: 1em; font-weight: bold; color: #003366;">Contact me</h2>
+            </div>
+            
+        </div>
 
-		<!-- Header -->  
-		  <!DOCTYPE html>
-		  <html lang="en">
-		  <head>
-			  <meta charset="UTF-8">
-			  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-			  <title>Dynamic Role</title>
-		  </head>
-		  <body>
-			  <header id="header">
-				  <div class="inner" style="text-align: center;">
-					  <a href="#" class="image avatar">
-						  <img src="images/me.jpg" alt="" style="width: 130px; height: auto; display: block; margin: 0 auto;" />
-					  </a>
-					  <h1 style="font-size: 2em; COLOR: rgba(245, 243, 245, 0.861);"><strong><em>Hi! I am Vidushi Bhargava, <br></strong><span id="role">a Data Scientist.</span></em><br></h1>
-				  </div>
-			  </header>
-		  
-			  <script>
-				  // List of roles
-				  var roles = [" a Data Scientist."];
-				  
-				  // Index to track current role
-				  var index = 0;
-				  
-				  // Function to update role text
-				  function updateRole() {
-					  document.getElementById("role").textContent = roles[index];
-					  index = (index + 1) % roles.length; // Move to the next role, loop back to the beginning if reached the end
-				  }
-		  
-				  // Update role every 3 seconds
-				  setInterval(updateRole, 1500);
-			  </script>
-		  </body>
-		  </html>
-		<!-- Main -->
-			<div id="main">
-				<!-- One -->
-
-						<section id="one">
-						
-						<header class="major">
-							<h2 style="font-size: 1.5em; font-weight: bold; color: rgba(62, 3, 49, 0.861);">Data Scientist with a Mathematics background, able to understand data and how it supports business problems. <br />
-							</h2>
-						</header>
-						<h4 style="font-size: 1em; COLOR: rgba(141, 89, 129, 0.861);">Eager learner, constantly evolving, and embracing the journey of continuous upskilling. Capable of translating business and analytics needs into data requirements, ensuring acquisition of the necessary information to solve problems. Able to collaborate with technology partners to troubleshoot data quality issues.</h4>
-						<ul class="actions" style="display: flex; justify-content: flex-end;">
-							<li><a href="https://www.linkedin.com/in/bhargavavidushi/" class="button" target="_blank">About Me</a></li>
-							<li><a href="https://drive.google.com/file/d/1aTqWOIIzYH2vmXTSNngIryaScUrx9YCh/view?usp=sharing" class="button" target="_blank">My Resume</a></li>
-						  </ul>	 	
-						</section>				
-						<section id="two"style="background-color: #f12f12f12; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
-						<h2 style="font-size: 1.5em; font-weight: bold; color: rgba(62, 3, 49, 0.861);" >Recent Work</h2>
-						<div class="row">
-							
-							<!-- Add jQuery -->
-							<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <div id="projects" class="tab-content">
+                
+            <section style="background-color: #f12f12f12; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+                    
+                    <div class="row">
+                        
+                        <!-- Add jQuery -->
+                        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 <!-- Add fancybox CSS -->
-							<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+                        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
 
 <!-- Add fancybox JS -->
-							<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
-							<style>
-								/* CSS for smaller image size */
-								.fancybox-slide img {
-									max-width: 60%;
-									max-height: 60%;
-									margin: auto;
-								}
-								</style>
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+                        <style>
+                            /* CSS for smaller image size */
+                            .fancybox-slide img {
+                                max-width: 60%;
+                                max-height: 60%;
+                                margin: auto;
+                            }
+                            </style>
 
-								<article class="col-4 col-12-xsmall work-item">
-									<a href="images/cc.png" data-fancybox="gallery">
-										<div class="image fit thumb">
-											<img src="images/cc.png" alt="" width="2000" height="150" />
-										</div>
-									</a>
-									<h3 style="font-size: 1em; COLOR: rgba(105, 40, 91, 0.861);">Cervical Cancer Prediction Using XgBoost</h3>
-									<p>Tech Stack: Machine Learning, EDA, Data Visualization</p>
-									<ul class="actions"></ul>
-									<a href="https://github.com/Vidushibh/Cervical-Cancer-Prediction-Using-XG-boost-algorithm/tree/master" target="_blank" class="button">View Project</a>
-								</article>
+                            <article class="col-4 col-12-xsmall work-item">
+                                <a href="images/cc.png" data-fancybox="gallery">
+                                    <div class="image fit thumb">
+                                        <img src="images/cc.png" alt="" width="800" height="180" />
+                                    </div>
+                                </a>
+                                <h3 style="font-size: 1em; COLOR: rgba(105, 40, 91, 0.861);">Cervical Cancer Prediction Using XgBoost</h3>
+                                <p>Tech Stack: Machine Learning, EDA, Data Visualization</p>
+                                <ul class="actions"></ul>
+                                <a href="https://github.com/Vidushibh/Cervical-Cancer-Prediction-Using-XG-boost-algorithm/tree/master" target="_blank" class="button">View Project</a>
+                            </article>
+                            <br>
 
-								<article class="col-4 col-12-xsmall work-item">
-									<a href="images/smilesent.png" data-fancybox="gallery">
-										<div class="image fit thumb">
-											<img src="images/smilesent.png" alt="" width="2000" height="150" />
-										</div>
-									</a>
-									<h3 style="font-size: 1em; COLOR: rgba(105, 40, 91, 0.861);">SmileSent-Analyzing sentiments with SMILE Twitter dataset</h3>
-									<p>Tech Stack: Deep Learning using BERT, EDA, Data Visualization, Torch</p>
-									<a href="https://github.com/Vidushibh/SmileSent---Analyzing-sentiments-with-Twitter-s-SMILE-dataset/blob/main/Smilesent.ipynb" target="_blank" class="button">View Project</a>
-								</article>
+                            
 
-								<article class="col-4 col-12-xsmall work-item">
-									<a href="images/dashboard.png" data-fancybox="gallery">
-										<div class="image fit thumb">
-											<img src="images/dashboard.png" alt="" width="2000" height="150" />
-										</div>
-									</a>
-									<h3 style="font-size: 1em; COLOR: rgba(105, 40, 91, 0.861);">Dasboard created on US Airlines Dataset</h3>
-									<p>Tech Stack: Streamlit, Pandas, NumPy, Plotly Express, Matplotlib, WordCloud, Plotly, Matplotlib</p>
-									<a href="https://github.com/Vidushibh/Dashboard-created-on-US-Airlines-dataset" target="_blank" class="button">View Project</a>
-								</article>
+                            <article class="col-4 col-12-xsmall work-item">
+                                <a href="images/dashboard.png" data-fancybox="gallery">
+                                    <div class="image fit thumb">
+                                        <img src="images/dashboard.png" alt="" width="800" height="280" />
+                                    </div>
+                                </a>
+                                <h3 style="font-size: 1em; COLOR: rgba(105, 40, 91, 0.861);">Dasboard created on US Airlines Dataset</h3>
+                                <p>Tech Stack: Streamlit, Pandas, NumPy, Plotly Express, Matplotlib, WordCloud, Plotly, Matplotlib</p>
+                                <a href="https://github.com/Vidushibh/Dashboard-created-on-US-Airlines-dataset" target="_blank" class="button">View Project</a>
+                            </article>
+                            <br>
 
+                        
+                            <article class="col-4 col-12-xsmall work-item">
+                                <a href="images/breast cancer.jpeg" data-fancybox="gallery">
+                                    <div class="image fit thumb">
+                                        <img src="images/breast cancer.jpeg" alt="" width="800" height="180" />
+                                    </div>
+                                </a>
+                                <h3 style="font-size: 1em; COLOR: rgba(105, 40, 91, 0.861);">Breast Cancer Prediction Using Logistic Regression</h3>
+                                <p>Tech Stack: Machine Learning, EDA, Data Visualization</p>
+                                <a href="https://colab.research.google.com/drive/1cQltacOfq2ZsKHI8RO_9whFDpIZRLlQ8#scrollTo=mhargzFLzYx5" target="_blank" class="button">View Project</a>
+                            </article>
+                            <br>
 
-							
-								<article class="col-4 col-12-xsmall work-item">
-									<a href="images/breast cancer.jpeg" data-fancybox="gallery">
-										<div class="image fit thumb">
-											<img src="images/breast cancer.jpeg" alt="" width="2000" height="150" />
-										</div>
-									</a>
-									<h3 style="font-size: 1em; COLOR: rgba(105, 40, 91, 0.861);">Breast Cancer Prediction Using Logistic Regression</h3>
-									<p>Tech Stack: Machine Learning, EDA, Data Visualization</p>
-									<a href="https://colab.research.google.com/drive/1cQltacOfq2ZsKHI8RO_9whFDpIZRLlQ8#scrollTo=mhargzFLzYx5" target="_blank" class="button">View Project</a>
-								</article>
+                            <article class="col-4 col-12-xsmall work-item">
+                                <a href="images/image seg.png" data-fancybox="gallery">
+                                    <div class="image fit thumb">
+                                        <img src="images/image seg.png" alt="" width="800" height="250" />
+                                    </div>
+                                </a>
+                                <h3 style="font-size: 1em; COLOR: rgba(105, 40, 91, 0.861);">Image Segmentation using OpenCV and K-Means</h3>
+                                <p>Tech Stack: OpenCV, Matplotlib, Data Visualization</p>
+                                <a href="https://github.com/Vidushibh/Image-Segmentation-using-Opencv-and-KMeans" target="_blank" class="button">View Project</a>
+                            </article>	
+                            <br>
+                            <article class="col-4 col-12-xsmall work-item">
+                                <a href="images/smilesent.png" data-fancybox="gallery">
+                                    <div class="image fit thumb">
+                                        <img src="images/smilesent.png" alt="" width="800" height="200" />
+                                    </div>
+                                </a>
+                                <h3 style="font-size: 1em; COLOR: rgba(105, 40, 91, 0.861);">SmileSent-Analyzing sentiments with SMILE Twitter dataset</h3>
+                                <p>Tech Stack: Deep Learning using BERT, EDA, Data Visualization, Torch</p>
+                                <a href="https://github.com/Vidushibh/SmileSent---Analyzing-sentiments-with-Twitter-s-SMILE-dataset/blob/main/Smilesent.ipynb" target="_blank" class="button">View Project</a>
+                            </article>
+                            <br>
 
+                        <article class="col-4 col-12-xsmall work-item">
+                            <a href="images/Bank segmentation.png" data-fancybox="gallery">
+                                <div class="image fit thumb">
+                                    <img src="images/Bank segmentation.png" alt="" width="800" height="200" />
+                                </div>
+                            </a>
+                            <h3 style="font-size: 1em; COLOR: rgba(105, 40, 91, 0.861);">Bank Customer Marketing Segmentation</h3>
+                            <p>Data Exploration, Scaling, Data Visualization, KMeans , PCA</p>
+                            <a href="https://github.com/Vidushibh/Bank-Customer-Marketing-Segmentation" target="_blank" class="button">View Project</a>
+                        </article>
 
-								<article class="col-4 col-12-xsmall work-item">
-									<a href="images/image seg.png" data-fancybox="gallery">
-										<div class="image fit thumb">
-											<img src="images/image seg.png" alt="" width="2000" height="150" />
-										</div>
-									</a>
-									<h3 style="font-size: 1em; COLOR: rgba(105, 40, 91, 0.861);">Image Segmentation using OpenCV and K-Means</h3>
-									<p>Tech Stack: OpenCV, Matplotlib, Data Visualization</p>
-									<a href="https://github.com/Vidushibh/Image-Segmentation-using-Opencv-and-KMeans" target="_blank" class="button">View Project</a>
-								</article>	
+                </div>
+            </section>
+        </div>
 
+        <div id="work" class="tab-content active">
+            <section id="three" style="background-color: #f1f1f1; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+                <div class="row">
+                    <article class="col-12 work-item">
+                        <h3 style="font-size: 1.0em; font-weight: bold; color: #003366;">Data Management Intern</h3>
+                        <p style="color: #003366;"><b><span style="font-size: 15px;">Federal Home Loan Bank of Indianapolis, IN, USA | June 2023 - Dec 2023</span></b></p>
+                        <p style="color: #003366; font-size: 15px;">
+                            <div class="timeline">
+                                <div class="event">
+                                    <input type="checkbox" id="exp1">
+                                    <label for="exp1">
+                                        <span class="arrow">&#9660; Expand</span>
+                                    </label>
+                                    <div class="content">
+                                        <ul>
+                                            <li>Created and/or modified data reports, reducing data retrieval time by 20%.</li>
+                                            <li>Deployed efficient batch processes to extract, transform, and load (ETL) data from source table into target tables, including Change Data Capture (CDC) logic.</li>
+                                            <li>Transformed 25 EUCs into production reports, improving data accuracy by 15% and saving 35 weekly manual hours.</li>
+                                            <li>Ran SQL queries in SSMS to extract data related to our clients, enabling comprehensive analysis and preferences.</li>
+                                            <li>Designed and presented a Power BI data story, increasing data-driven decision-making by 10%.</li>
+                                        </ul>
+                                        <p style="color: #003366; font-size: 15px;"><b>Relevant Tools and Skills:</b> ETL, Brightics, Oracle, Power BI, SSMS, RICH Client, Rally</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </p>
+                    </article>
+                    <!-- Additional work experiences go here -->
+                </div>
+            </section >
+        <section id="three" style="background-color: #f12f12f12; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+            <article class="col-12 work-item">
+                <h3 style="font-size: 1.0em; font-weight: bold; color: #003366;">Business Analyst</h3>
+                <p style="color: #003366; font-size: 15px;"><b><span style="font-weight: bold;">Genpact, India | Jan 2022 - Aug 2022</span></b></p>
+                <p style="color: #003366; font-size: 15px;"> 
+                    <div class="timeline">
+                        <div class="event">
+                            <input type="checkbox" id="exp2">
+                            <label for="exp2">
+                                <span class="arrow">&#9660; Expand</span> <!-- Downward arrow for expandable content -->
+                            </label>
+                            <div class="content">
+                                <ul>
+                                    <!-- List of bullet points for detailed experience -->
+                                    <li>Developed and implemented Python scripts for data pre-processing, feature engineering, and model evaluation.</li>
+                                    <li>Collaborated with cross-functional teams to understand business requirements and translate them into data-driven solutions.</li>
+                                    <li>Designed and presented data visualizations using Tableau, enhancing decision-making processes.</li>
+                                    <li>Conducted A/B testing and statistical analysis to evaluate the impact of marketing campaigns.</li>
+                                    <li>Created automated reports and dashboards, reducing manual reporting time by 30%.</li>
+                                </ul>
+                                <p style="color: #003366; font-size: 15px;"><b>Relevant Tools and Skills:</b> Python, Tableau, SQL, A/B Testing, Statistical Analysis</p>
+                            </div>
+                        </div>
+                    </div>
+                </p>
+            </article>
+        </section>
+        <section id="three" style="background-color: #f1f1f1; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+            <article class="col-12 work-item">
+                <h3 style="font-size: 1.0em; font-weight: bold; color: #003366;">Senior Data Science Analyst</h3>
+                <p style="color: #003366; font-size: 15px;"><b><span style="font-weight: bold;">Cartesian Consulting, India | July 2021 - Jan 2022</span></b></p>
+                <p style="color: #003366; font-size: 15px;"> 
+                    <div class="timeline">
+                        <div class="event">
+                            <input type="checkbox" id="exp2">
+                            <label for="exp2">
+                                <span class="arrow">&#9660; Expand</span> <!-- Downward arrow for expandable content -->
+                            </label>
+                            <div class="content">
+                                <ul>
+                                    <!-- List of bullet points for detailed experience -->
+                                    <li>Built and maintained data pipelines for extracting, cleaning, and pre-processing datasets of approximately 475 million records for user-based communication using tools such as Python and SQL.</li>
+                                    <li>Utilized Amazon S3 for data storage and retrieval, developing a predictive model to predict which customers are likely to churn from a subscription-based service or product.</li>
+                                    <li>Managed win-back, retention renewal campaigns, extending customer lifecycles, boosting response by 40%.</li>
+                                </ul>
+                                <p style="color: #003366; font-size: 15px;"><b>Relevant Tools and Skills:</b> Python, Tableau, SQL, A/B Testing, Statistical Analysis</p>
+                            </div>
+                        </div>
+                    </div>
+                </p>
+            </article>
+        </section>
+        <section id="three" style="background-color: #f12f12f12; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+            <article class="col-12 work-item">
+                <h3 style="font-size: 1.0em; font-weight: bold; color: #003366;">Senior Subject Matter Expert - Data Science Team/h3>
+                <p style="color: #003366; font-size: 15px;"><b><span style="font-weight: bold;">Chegg India Pvt Ltd, India | Jan 2018 - July 2021</span></b></p>
+                <p style="color: #003366; font-size: 15px;"> 
+                    <div class="timeline">
+                        <div class="event">
+                            <input type="checkbox" id="exp2">
+                            <label for="exp2">
+                                <span class="arrow">&#9660; Expand</span> <!-- Downward arrow for expandable content -->
+                            </label>
+                            <div class="content">
+                                <ul>
+                                    <!-- List of bullet points for detailed experience -->
+                                    <li>Performed data analysis on quantitative and qualitative data using statistical methods and data visualization tools to perform competitive analysis, driving business revenue growth.</li>
+                                <li>Conducted error analysis by partitioning the development set into Eyeball and Blackbox subsets, significantly enhancing model accuracy by reducing mislabelled errors by 30% and addressing 20% of other errors.</li>
+                                <li>Developed a highly accurate Q&A classifier using machine learning techniques, categorizing posted questions into precise categories and improving question routing efficiency by 25%.</li>
+                            </ul>
+                                <p style="color: #003366; font-size: 15px;"><b>Relevant Tools and Skills:</b> Python, Tableau, SQL, A/B Testing, Statistical Analysis</p>
+                            </div>
+                        </div>
+                    </div>
+                </p>
+            </article>
+        </section>
+            
+            </div>
 
-							<article class="col-4 col-12-xsmall work-item">
-								<a href="images/Bank segmentation.png" data-fancybox="gallery">
-									<div class="image fit thumb">
-										<img src="images/Bank segmentation.png" alt="" width="2000" height="150" />
-									</div>
-								</a>
-								<h3 style="font-size: 1em; COLOR: rgba(105, 40, 91, 0.861);">Bank Customer Marketing Segmentation</h3>
-								<p>Data Exploration, Scaling, Data Visualization, KMeans , PCA</p>
-								<a href="https://github.com/Vidushibh/Bank-Customer-Marketing-Segmentation" target="_blank" class="button">View Project</a>
-							</article>
-							
-							
-							
+            <div id="education" class="tab-content">
+                <section style="background-color: #f12f12f12; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+                    <div class="row">
+                        <article class="col-12 education-item">
+                            <h3 style="font-size: 1.0em; font-weight: bold; color: #003366;">Master of Science in Data Science</h3>
+                            <p style="color: #003366; font-size: 15px;"><b><span style="font-weight: bold;">Indiana University Bloomington, USA | 2022 - 2023</span></b></p>
+                            <p style="color: #003366; font-size: 15px;"><b>Relevant Courses:</b> Applied Machine Learning, Data Mining, Social Media Mining, Elements of Artificial Intelligence, Database Management Systems, Advanced Database Technologies, Statistics</p>
+                            <div class="timeline">
+                                <div class="event">
+                                    <input type="checkbox" id="edu1">
+                                    <label for="edu1">
+                                        <span class="arrow">&#9660; Expand</span>
+                                    </label>
+                                    <div class="content">
+                                        <ul>
+                                            <li>Specialized in machine learning, data mining, and big data analytics.</li>
+                                            <li>Conducted research on predictive modeling and data visualization techniques.</li>
+                                            <li>Collaborated on projects involving large datasets and complex data analysis.</li>
+                                            <li>As a graduate assistant, performed data analysis to predict PASS student study session effectiveness, resulting in a 20% success rate increase.</li>
+                                            <li>Observed student study sessions, offering constructive feedback to 11 PASS leaders, enhancing classroom instruction quality by 15% and overall student engagement.</li>
+                                        </ul>
+                                        <p style="color: #003366; font-size: 15px;"><b>Relevant Courses:</b> Machine Learning, Data Mining, Big Data Analytics, Predictive Modeling</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+                <section style="background-color: #f1f1f1; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+                    <div class="row">
+                        <article class="col-12 education-item">
+                            <h3 style="font-size: 1.0em; font-weight: bold; color: #003366;">Masters in Mathematics</h3>
+                            <p style="color: #003366; font-size: 15px;"><b><span style="font-weight: bold;">University of Delhi, India | 2014 - 2016</span></b></p>
+                            <p style="color: #003366; font-size: 15px;"><b>Relevant Courses:</b> Differential Geometry, Advanced Complex Analysis, Methods of Applied Mathematics, Group Theory, Harmonic Analysis, Computational Methods for PDE</p>
+                        </article>
+                    </div>
+                </section>
+                <section style="background-color: #f12f12f12; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+                    <div class="row">
+                        <article class="col-12 education-item">
+                            <h3 style="font-size: 1.0em; font-weight: bold; color: #003366;">B.Sc. (Hons) in Mathematics</h3>
+                            <p style="color: #003366; font-size: 15px;"><b><span style="font-weight: bold;">University of Delhi, India | 2011 - 2014</span></b></p>
+                            <p style="color: #003366; font-size: 15px;"><b>Relevant Courses:</b> Linear Algebra, Real Analysis, Calculus, Differential Equations, Statistics, Probability</p>
+                        </article>
+                    </div>
+                </section>
+            </div>
+            
+            <div id="skills" class="tab-content">
+                <section style="background-color: #f1f1f1; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+                    <div class="skills-section">
+                        <div class="skill-category">
+                            <h1 style="font-size: 1.0em; font-weight: bold; color: #003366;">Programming Technologies: </h1>
+                                <li>Python (NumPy, Pandas, Scikit-Learn, PyTorch, TensorFlow), R</li>
+                            <h1 style="font-size: 1.0em; font-weight: bold; color: #003366;">Databases: </h1> 
+                                <li> MySQL, Postgres, MongoDB,Graph database (Neo4j),Spark SQL, Brightics, Snowflake </li>  
+                            <h1 style="font-size: 1.0em; font-weight: bold; color: #003366;">Cloud Technologies :</h1>
+                                <li>Microsoft Azure, Apache Spark
+                            <h1 style="font-size: 1.0em; font-weight: bold; color: #003366;">Data Visualization : </h1>
+                                <li>Power BI (Power Automate, DAX), Tableau, Paraview</li>
+                            <h1 style="font-size: 1.0em; font-weight: bold; color: #003366;">Machine Learning</h1>
+                                <li>Python, R: Linear Regression, Logistic Regression, Decision Trees, Supervised and Unsupervised Learning, GLM, Hypothesis Testing, Predictive Modelling, SVM, Random Forest, Boosting (Gradient, XGBoost), K-means Clustering, Hierarchical Clustering, ANN, CNN, RNN, Time Series Analysis, Forecasting, KNN, NLP</li>
+                            <h1 style="font-size: 1.0em; font-weight: bold; color: #003366;">Deep Learning</h1>
+                            <li> Keras, TensorFlow</li>
+                        </div>
+                    </div>   
+                </div>
 
-						</section>
-				
-					  <section id="three" style="background-color: #f12f12f12; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
-						<h2 style="font-size: 2em; font-weight: bold; color: #003366;">Work Experience</h2>
-						<div class="row">
-							<article class="col-12 work-item">
-								<div class="logo-container">
-									<img src="images/bank logo.jpeg" alt="Bank Logo" width="100" />
-								</div>
-								<h3 style="font-size: 1.5em; font-weight: bold; color: #003366;">Data Management Intern</h3>
-								<p style="color: #003366;"><b><span style="font-weight: bold; font-size: 17px;">Federal Home Loan Bank of Indianapolis, IN, USA | June 2023 - Dec 2023</span></b></p>
-								<p style="color: #003366; font-size: 16px;"> 
-									• Created and/or modified data reports, reducing data retrieval time by 20%.<br>
-									• Deployed efficient batch processes to extract, transform, and load (ETL) data from source table into target tables, including Change Data Capture (CDC) logic.<br>
-									• Transformed 25 EUCs into production reports, improving data accuracy by 15% and saving 35 weekly manual hours.<br>
-									• Ran SQL queries in SSMS to extract data related to our clients, enabling comprehensive analysis and preferences.<br>
-									• Created views for Power BI data story, providing visually engaging representations of data insights for effective communication and decision-making.<br>
-									• Designed and presented a Power BI data story, increasing data-driven decision-making by 10%.
-								</p><br>
-								<p style="color: #003366; font-size: 17px;"><b>Relevant Tools and Skills:</b> ETL, Brightics, Oracle, Power BI, SSMS, RICH Client, Rally</p>
-							</article> 
-							<!-- Repeat the above structure for other work experiences -->
-							<article class="col-12 work-item">
-								<div class="logo-container">
-									<img src="images/genpact logo.png" alt="Bank Logo" width="100" />
-								</div>
-								<h3 style="font-size: 1.5em; font-weight: bold; color: #003366;">Business Analyst</h3>
-								<p style="color: #003366; font-size: 17px;"><b><span style="font-weight: bold;">Genpact, India | Jan 2022 - Aug 2022</span></b></p>
-								<p style="color: #003366; font-size: 16px;"> 
-									• Performed in-depth model reviews, achieving a 15% increase in model accuracy and performance.<br>
-									• Contributed to ongoing validation activities, optimizing workflow processes across the model lifecycle, and improving model efficiency.
-							<br>• Managed a highly imbalanced dataset for credit card fraud detection. Random Forest identified 73 errors with 99.74% accuracy, Local Outlier Factor detected 97 errors with 99.65% accuracy, while Support Vector Machines found 8516 errors with 70.09% accuracy, and Logistic Regression was the least accurate.
-								</p><br>
-								<p style="color: #003366; font-size: 17px;"><b>Relevant Tools and Skills:</b> SQL, Python, Machine Learning, Tableau</p>
-							</article>
-							<article class="col-12 work-item">
-								<div class="logo-container">
-									<img src="images/CC logo.png" alt="Bank Logo" width="100" />
-								</div>
-								<h3 style="font-size: 1.5em; font-weight: bold; color: #003366;">Senior Analyst</h3>
-								<p style="color: #003366;"><b><span style="font-weight: bold; font-size: 17px;">Cartesian Consulting, India | July 2021 - Jan 2022</span></b></p>
-								<p style="color: #003366; font-size: 16px;"> 
-									• Implemented a classification model to identify customer propensity for high-end product purchases, reducing churn rate by 3%.<br>
-									• Mentored 3 team members in preparing a single customer view, performing bivariate analysis, building a machine learning model to predict customer buying propensity, and proposing a business case to the client.
-									• Developed win-back, retention, and renewal campaigns, extending lifecycles and increasing customer response by 40%.
-								</p><br>
-								<p style="color: #003366; font-size: 17px;"><b>Relevant Tools and Skills:</b> SQL, Python, Excel, Powerpoint, Machine Learning</p>
-							</article>
-							<article class="col-12 work-item">
-								<div class="logo-container">
-									<img src="images/chegg logo.png" alt="Bank Logo" width="100" />
-								</div>
-								<h3 style="font-size: 1.5em; font-weight: bold; color: #003366;">Senior Subject Matter Expert</h3>
-								<p style="color: #003366;"><b><span style="font-weight: bold; font-size: 17px;">Chegg India Pvt Ltd, India | Jan 2019 - July 2021</span></b></p>
-								<p style="color: #003366; font-size: 16px;"> 
-									• Developed a highly accurate Q&A classifier, categorizing posted questions into precise categories, improving question routing efficiency by 25%.<br>
-									• Engineered a robust R-based random forest model to proactively identify and filter out freelancer-posted spam solutions, resulting in a 30% reduction in spam content and enhancing platform credibility.
-								</p><br>
-								<p style="color: #003366; font-size: 17px;"><b>Relevant Tools and Skills:</b> R, SQL, Python, Excel, Machine Learning, Latex, MathType</p>
-							</article>
-						</div>
-					</section>
-					
-					</section>
-					<section id="education" style="background-color: #f12f12f12; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
-						<h2 style="font-size: 2em; font-weight: bold; color: #003366;">Education</h2>
-						<div class="row">
-							<article class="col-12 work-item">
-								<div class="logo-container">
-									<img src="images/iu.png" alt="Indiana University Logo" width="50" />
-								</div>
-								<h3 style="font-size: 1.5em; font-weight: bold; color: #003366;">Master of Science in Data Science</h3>
-								<p style="color: #003366;"><b><span style="font-weight: bold;font-size: 17px;">Indiana University-Bloomington, IN, USA | August 2022 - May 2024</span></b></p>
-								<p style="color: #003366; font-size: 16px;"> 
-									• Along with my masters I also work as a Graduate student where I observe student study sessions, offer constructive feedback to 11 PASS leaders, enhancing classroom instruction quality by 15% and overall student engagement.<br>
-									• Performed data analysis to predict the effectiveness of the student study sessions, resulting in a 20% success rate increase.<br>
-								</p><br>
-								<p style="color: #003366; font-size: 16px;"><b>Relevant Coursework :</b> Elements of Artificial Intelligence, Applied Machine Learning, Applied Statistics, Data Mining, Social Media Mining, Advanced Database Technologies, Database Management Systems, Scientific Visualization</p>
-							</article> 
+                <div id="certifications" class="tab-content">
+                    <article class="col-4 col-12-xsmall work-item">
+                        <a href="https://coursera.org/verify/T3K5H6LH65WQ" target="_blank" class="button">Deep Learning with Keras</a>
+                        
+                    </article>
+                    <br>
+                    <article class="col-4 col-12-xsmall work-item">
+                        
+                    
+                        
+                    <a href="https://drive.google.com/file/d/1Bt5EFzDE6EVjQCOYShcKzvSysp70kfQY/view?usp=drive_link" target="_blank" class="button">Snowflake</a>
+                    </article>
+                    <br>
+                
+                    <article class="col-4 col-12-xsmall work-item">
+                        
+                       
+                        
+                        <a href="https://drive.google.com/file/d/19hx0myc4n2ZTsQNNjCnb0n61zWcU5_Ub/view?usp=drive_link" target="_blank" class="button">NoSQL</a>
+                    </article>
+                    <br>
+                    <article class="col-4 col-12-xsmall work-item">
+                        
+               
+                        
+                        <a href="https://drive.google.com/file/d/1DsELq6nS9Wt_J8mgBVk0E4C9LjuzPVlt/view?usp=drive_link" target="_blank" class="button">Certified Machine Learning Expert</a>
+                    </article>
+                    <br>
+       
+                    <article class="col-4 col-12-xsmall work-item">
+                        
+                
+                        
+                        <a href="https://drive.google.com/file/d/1_znsMkdSycp_tFsAODDkTObntLfy-3wB/view?usp=drive_link" target="_blank" class="button">Certified Data Science Specialist</a>
+                    </article>
+                    <br>
+                    <article class="col-4 col-12-xsmall work-item">
+                        
+    
+                        
+                        <a href="https://drive.google.com/file/d/1P9IfFyAEzcmOIg8yYM0iPZN58ccg2jp7/view?usp=drive_link" target="_blank" class="button">Certified Tableau Professional</a>
+                    </article>
+                    <br>
+                    </div>    
+            
 
-							<article class="col-12 work-item">
-								<div class="logo-container">
-									<img src="images/du.jpeg" alt="Delhi University Logo" width="50" />
-								</div>
-								<h3 style="font-size: 1.5em; font-weight: bold; color: #003366;">Master of Science in Mathematics</h3>
-								<p style="color: #003366;"><b><span style="font-weight: bold; font-size: 17px;">University of Delhi, India | July 2011 - May 2014</span></b></p>
-								<p style="color: #003366; font-size: 16px;"> 
-									• Actively contributed to the university's Placement Cell, participating in organizing events and assisting fellow students in their career development.<br>
-									• As a university student, I actively participated in Delhi University Computer center (DUCC), contributing to coding and programming activities.<br>
-								</p><br>
-								<p style="color: #003366; font-size: 16px;"><b>Relevant Coursework :</b> Differential Geometry, Advanced Complex Analysis, Methods of Applied Mathematics, Group Theory, Harmonic Analysis, Computational methods for PDE</p>
-							</article>
+            <div id="Contact me" class="tab-content">
+                <section style="background-color: #f1f1f1; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+                    <h2 style="color: #003366; font-size: 1.2em; font-weight: bold;">I'd love to hear from you!</h2>
+                    <p style="color: #003366; font-size: 16px;">
+                         Whether you have a question about my projects, want to collaborate, or just want to say hello, feel free to reach out.
+                    </p>
+                    <div style="margin-top: 20px;">
+                        <h3 style="color: #003366; font-size: 0.9em;">Email : vidushibhrgv@gmail.com</h3>
+                        <h3 style="color: #003366; font-size: 0.9em;">Phone : +1 (812)-803-8565</h3>
+                        <p style="color: #003366; font-size: 16px;">
+                            Follow me on my social media channels for the latest updates:
+                        </p>
+                        <ul style="list-style-type: none; padding: 0;">
+                            <li><a href="https://www.linkedin.com/in/bhargavavidushi/" target="_blank" style="color: #0066cc; text-decoration: none;">Linkedin</a></li>
+                            <li><a href="https://github.com/Vidushibh" target="_blank" style="color: #0066cc; text-decoration: none;">GitHub</a></li>
+                            <li><a href="https://medium.com/@vidushibhrgv" target="_blank" style="color: #0066cc; text-decoration: none;">Medium</a></li>
+                            <li><a href="https://www.datacamp.com/portfolio/vibhar" target="_blank" style="color: #0066cc; text-decoration: none;">DataCamp</a></li>
+                        </ul>
+                        
+                    </div>
+                    
+                </section>
+            </div>
 
-							<article class="col-12 work-item">
-								<div class="logo-container">
-									<img src="images/du.jpeg" alt="Delhi University Logo" width="50" />
-								</div>
-								<h3 style="font-size: 1.5em; font-weight: bold; color: #003366; font-size: 17px;">Bachelor of Science in Mathematics Honours</h3>
-								<p style="color: #003366;"><b><span style="font-weight: bold;">University of Delhi, India | July 2011 - May 2014</span></b></p>
-								<p style="color: #003366; font-size: 16px;"> 
-									• I was among the Top 3 students of the university.
-								</p><br>
-								<p style="color: #003366; font-size: 16px;"><b>Relevant Coursework :</b> Linear Algebra, Real Analysis, Calculus, Differential Equations, Statistics, Probability</p>
-							</article>
+            
+            
+            
+           
 
-						</section> 
-				<!-- Four -->
-					<section id="five" style="background-color: #f12f12f12; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
-						
-					
-						<h2 style="font-size: 2em; font-weight: bold; color: #003366;">Certifications</h2>
-					<div class="row">
-						<article class="col-4 col-12-xsmall work-item">
-							<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
 
-<!-- Add fancybox CSS -->
-							<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
-
-<!-- Add fancybox JS -->
-							<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
-							<style>
-								/* CSS for smaller image size */
-								.fancybox-slide img {
-									max-width: 60%;
-									max-height: 60%;
-									margin: auto;
-								}
-								</style>
-							
-							<a href="images/1.png" data-fancybox="gallery">
-								<div class="image fit thumb">
-									<img src="images/1.png" alt="" width="2000" height="150" />
-								</div>
-							</a>
-							
-						</article>
-						<article class="col-4 col-12-xsmall work-item">
-				
-							<a href="images/2.png" data-fancybox="gallery">
-								<div class="image fit thumb">
-									<img src="images/2.png" alt="" width="2000" height="150" />
-								</div>
-							</a>
-							
-						</article>
-						<article class="col-4 col-12-xsmall work-item">
-						
-							<a href="images/3.png" data-fancybox="gallery">
-								<div class="image fit thumb">
-									<img src="images/3.png" alt="" width="2000" height="150" />
-								</div>
-							</a>		
-					</section>
-<!-- Three -->
-
-
-					<section id="three" style="background-color: #f2f2f2; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
-						<h2 style="font-size: 2em; font-weight: bold; color: #003366;">Get In Touch</h2>
-						<p style="font-size: 1.2em; color: #691d2f;">If you have any questions or would like to discuss more, feel free to contact me.</p>
-						
-						<div class="row">
-							<div class="col-4 col-12-small">
-								<ul class="labeled-icons">
-									<li style="margin-bottom: 20px;">
-										<h3 class="icon solid fa-home" style="color: #003366;"><span class="label">Address</span></h3>
-										<span style="font-size: 1.1em;">Bloomington, Indiana<br />United States</span>
-									</li>
-					
-									<li style="margin-bottom: 20px;">
-										<h3 class="icon solid fa-mobile-alt" style="color: #003366;"><span class="label">Phone</span></h3>
-										<a href="tel:8128038565" style="font-size: 1.1em; color: #003366;">812-803-8565</a>
-									</li>
-					
-									<li style="margin-bottom: 20px;">
-										<h3 class="icon solid fa-envelope" style="color: #003366;"><span class="label">Email</span></h3>
-										<a href="mailto:vidushibhrgv@gmail.com" style="font-size: 1.1em; color: #003366;">vidushibhrgv@gmail.com</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</section>
-					
-
-			</div>
-
-		<!-- Footer -->
-			<footer id="footer">
-				<div class="inner">
-					<ul class="icons">
-						<li><a href="https://www.linkedin.com/in/bhargavavidushi/" class="icon brands fa-linkedin" target="_blank"><span class="label">Twitter</span></a></li>
-						<li><a href="https://github.com/Vidushibh" class="icon brands fa-github" target="_blank"><span class="label">Github</span></a></li>
-					</ul>
-				</div>
-			</footer>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+<script>
+    function openTab(evt, tabName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tab-content");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+            tabcontent[i].classList.remove("active");
+        }
+        tablinks = document.getElementsByClassName("tab");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].classList.remove("active");
+        }
+        document.getElementById(tabName).style.display = "block";
+        document.getElementById(tabName).classList.add("active");
+        evt.currentTarget.classList.add("active");
+    }
+    document.getElementsByClassName("tab")[0].click();
+</script>
+</body>
 </html>
